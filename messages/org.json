@@ -4,7 +4,7 @@
   "returnFlagDescription": "boolean flag to prevent opening and return the URL",
   "errorNoOrgResults": "No results found for the org '%s'.",
   "examples": [
-    "sfdx hello:org --targetusername myOrg@example.com --targetdevhubusername devhub@org.com",
-    "sfdx hello:org --name myname --targetusername myOrg@example.com"
+    "sfdx fbmc:url:open --targetusername myOrg@example.com --targetdevhubusername devhub@org.com",
+    "sfdx fbmc:url:open --name myname --targetusername myOrg@example.com"
   ]
 }

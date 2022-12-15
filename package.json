@@ -1,6 +1,7 @@
 {
   "name": "@fbmc/sfdx-plugin-url",
-  "version": "0.0.1",
+  "description": "SFDX plugin to help stich and open org centric URLs",
+  "version": "0.0.2",
   "keywords": [
     "sfdx-plugin"
   ],

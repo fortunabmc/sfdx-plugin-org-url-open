@@ -4,12 +4,12 @@
  * Licensed under the BSD 3-Clause license.
  * For full license text, see LICENSE.txt file in the repo root or https://opensource.org/licenses/BSD-3-Clause
  */
+import { EOL } from 'node:os';
+
 import { flags, SfdxCommand } from '@salesforce/command';
 import { Messages } from '@salesforce/core';
 import { AnyJson } from '@salesforce/ts-types';
 import * as open from 'open';
-
-import { splitOnEOL } from '../../../helpers/tools';
 
 // Initialize Messages with the current plugin directory
 Messages.importMessagesDirectory(__dirname);
@@ -21,7 +21,7 @@ const messages = Messages.loadMessages('@fbmc/sfdx-plugin-open-org-to-url', 'org
 export default class Org extends SfdxCommand {
   public static description = messages.getMessage('commandDescription');
 
-  public static examples = splitOnEOL(messages.getMessage('examples'));
+  public static examples = messages.getMessage('examples').split(EOL);
 
   public static args = [];
 
