@@ -4,12 +4,17 @@
     "rootDir": "src",
     "module": "commonjs",
     "target": "es2020",
-    "lib": ["es2020"],
+    "lib": [
+      "es2020"
+    ],
     "sourceMap": true,
     "declaration": true,
     "moduleResolution": "node",
     "alwaysStrict": true,
-    "noUnusedLocals": true
+    "noUnusedLocals": true,
+    "resolveJsonModule": true
   },
-  "include": ["./src/**/*.ts"]
+  "include": [
+    "./src/**/*.ts"
+  ]
 }

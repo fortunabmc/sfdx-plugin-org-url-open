@@ -1,13 +1,13 @@
 {
-  "name": "@fbmc/sfdx-plugin-url",
-  "description": "SFDX plugin to help stich and open org centric URLs",
-  "version": "0.0.2",
+  "name": "@fbmc/sfdx-plugin-org-url-open",
+  "description": "SFDX plugin to help stitch and open org-centric URLs",
+  "version": "0.1.0",
   "keywords": [
     "sfdx-plugin"
   ],
-  "homepage": "https://github.com/fortunabmc/sfdx-plugin-url-url",
-  "bugs": "https://github.com/fortunabmc/sfdx-plugin-url/issues",
-  "repository": "fortunabmc/sfdx-plugin-url",
+  "homepage": "https://github.com/fortunabmc/sfdx-plugin-org-url-open",
+  "bugs": "https://github.com/fortunabmc/sfdx-plugin-org-url-open/issues",
+  "repository": "fortunabmc/sfdx-plugin-org-url-open",
   "license": "MIT",
   "author": {
     "name": "Kevin Hill @khill-fbmc",
@@ -37,6 +37,7 @@
   },
   "devDependencies": {
     "@oclif/test": "^2.2.15",
+    "@salesforce/cli-plugins-testkit": "^3.2.13",
     "@salesforce/prettier-config": "^0.0.2",
     "@salesforce/ts-sinon": "^1.4.2",
     "@types/chai": "^4.3.4",
