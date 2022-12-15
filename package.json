@@ -1,6 +1,6 @@
 {
   "name": "@fbmc/sfdx-plugin-org-url-open",
-  "description": "SFDX plugin to help stitch and open org-centric URLs",
+  "description": "SFDX plugin for the command `force:org:open:url` to help open your browser to org-centric URLs",
   "version": "0.1.0",
   "keywords": [
     "sfdx-plugin"

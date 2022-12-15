@@ -1,5 +1,5 @@
 {
-  "commandDescription": "Open or fetch a URL from your Organization",
+  "commandDescription": "open your browser to org-centric URLs",
   "pathFlagDescription": "path to append to the instanceUrl",
   "returnFlagDescription": "boolean flag to prevent opening and return the URL",
   "errorNoOrgResults": "No results found for the org '%s'.",
