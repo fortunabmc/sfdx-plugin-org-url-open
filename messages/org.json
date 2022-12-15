@@ -1,0 +1,10 @@
+{
+  "commandDescription": "launch your browser to a URL rooted in your current Org",
+  "pathFlagDescription": "path to append to the instanceUrl",
+  "returnFlagDescription": "boolean flag to prevent opening and return the URL",
+  "errorNoOrgResults": "No results found for the org '%s'.",
+  "examples": [
+    "sfdx hello:org --targetusername myOrg@example.com --targetdevhubusername devhub@org.com",
+    "sfdx hello:org --name myname --targetusername myOrg@example.com"
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "name": "@fbmc/sfdx-plugin-url",
+  "version": "0.0.1",
+  "keywords": [
+    "sfdx-plugin"
+  ],
+  "homepage": "https://github.com/fortunabmc/sfdx-plugin-url-url",
+  "bugs": "https://github.com/fortunabmc/sfdx-plugin-url/issues",
+  "repository": "fortunabmc/sfdx-plugin-url",
+  "license": "MIT",
+  "author": {
+    "name": "Kevin Hill @khill-fbmc",
+    "email": "kevin.hill@fortunabmc.com"
+  },
+  "files": [
+    "/lib",
+    "/messages",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ],
+  "scripts": {
+    "build": "tsc -p .",
+    "lint": "eslint src/**/*.ts test/**/*.ts",
+    "prepack": "rm -rf lib && tsc -b && oclif manifest && oclif readme",
+    "postpack": "rm -f oclif.manifest.json",
+    "test": "nyc --extension .ts --require ts-node/register mocha --forbid-only \"test/**/*.test.ts\"",
+    "posttest": "eslint src/**/*.ts test/**/*.ts",
+    "version": "oclif readme && git add README.md"
+  },
+  "dependencies": {
+    "@oclif/core": "^1.21.0",
+    "@salesforce/command": "^5.2.30",
+    "@salesforce/core": "^3.32.9",
+    "open": "^8.4.0",
+    "tslib": "^2.4.1"
+  },
+  "devDependencies": {
+    "@oclif/test": "^2.2.15",
+    "@salesforce/prettier-config": "^0.0.2",
+    "@salesforce/ts-sinon": "^1.4.2",
+    "@types/chai": "^4.3.4",
+    "@types/mocha": "^8.2.3",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "chai": "^4.3.7",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-header": "^3.1.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsdoc": "^35.5.1",
+    "eslint-plugin-prettier": "^3.4.1",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "mocha": "^9.2.2",
+    "nyc": "^15.1.0",
+    "oclif": "^3.4.2",
+    "prettier": "^2.8.1",
+    "sinon": "10.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "oclif": {
+    "commands": "./lib/commands",
+    "bin": "sfdx",
+    "topics": {
+      "hello": {
+        "description": "Commands to say hello."
+      }
+    }
+  }
+}
